@@ -1,0 +1,14 @@
+resources:
+  repositories:
+  - repository: anc_template_repo
+    type: github
+    name: RogersCommunications/edads-ai-nerve-center
+    ref: refs/heads/main
+    endpoint: RogersCommunications
+ 
+extends:
+  template: DevOps/templates/powerbi.yml@anc_template_repo
+  parameters:
+    # Common
+    orchestration_file_path: 'C:\Users\Grace.Zhou\OneDrive - Rogers Communications Inc\0.Grace's file\3. ANC Project\DigitalWorkSpace\CP\Devops\stg\pbi_deploy\orchestration.yml'
+    service_connection_group: 'PowerBI-STG'
