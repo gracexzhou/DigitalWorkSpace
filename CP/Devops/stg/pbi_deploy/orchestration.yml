@@ -1,0 +1,8 @@
+configs:
+  team_name: '<team name>'
+  repo_name: '<repository name>'
+powerbi:
+  project_root: './<path_to_PowerBI_directory_in_your_repository>'
+  workspaces:
+    <Workspace Name>:
+      - <pbix_file _name>.pbix
